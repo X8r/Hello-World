@@ -1,0 +1,409 @@
+abapGit changelog
+=================
+
+Legend
+------
+* : fixed
+! : changed
++ : added
+- : removed
+
+2018-04-03 v1.63.0
+------------------
++ ECTD support
+! Seperation of UI and logic
++ Transport to zip, choose folder logic
+* TRAN fix
+* Additional unit tests
+
+2018-03-26 v1.62.0
+------------------
+* downport
+! add hostname to password popup dialog
+* git fix for AWS CodeCommit
++ additional authorization checks possible
++ repo settings page updated
++ possibility to only select local objects
+
+2018-03-18 v1.61.0
+------------------
+* ignore deleted objects in syntax check
+* fix transport layer invalid
+* fix error messages
+* more downport
+* INTF clear more fields
++ user exit to modify http client, eg SSO between SAP systems 
+
+2018-03-14 v1.60.1
+------------------
+* show error messages instead of "Exception was raised"
+
+2018-03-10 v1.60.0
+------------------
++ 2FA inheritance
++ improved error handling
+* fix deserialization dependency ENHO -> ENHS
+* DOCT fix tadir handling
+
+2018-02-24 v1.59.0
+------------------
++ background mode: possibility to use user info from SU01
+! git internals, better performance
+* fix ADT jump dump
+! all classes now global in abapGit development version
+
+2018-02-15 v1.58.0
+------------------
+! more classes moved to global
+* SHMA bugfix
+
+2018-02-11 v1.57.0
+------------------
+! more classes moved to global
+* where-used lists for CLASses
+
+2018-02-03 v1.56.0
+------------------
++ background mode: remove old files when moving
++ checkout tags
+! progress indicator changes
+* downport
+* no package transport during serialization
+* fix dump in new CLAS serialization
+
+2018-01-21 v1.55.0
+------------------
+! CLAS deserialization changed
+! Progress indicators changed
++ Tag a specific commit
+
+2018-01-19 v1.54.0
+------------------
++ SHI8 support
++ experimental feature: parallel DDIC activation
+* downport
+* SAMC / SAPC fix changed_by
+* more classes to global
+
+2018-01-14 v1.53.0
+------------------
++ SHI5 support
++ DSYS support
+* dropdown for selecting folder logic
+* more classes to global
+
+2018-01-11 v1.52.0
+------------------
++ CUS0 + CUS1 + CUS2 support
+* WAPA fix subfolders
+* WAPA fix overwriting
+* more classes to global
+
+2018-01-08 v1.51.2
+------------------
+* some local classes moved to global in abapGit dev version
+* fix finding superpackages
+* SAP systems recognized as SAP
+
+2018-01-05 v1.51.1
+------------------
+* minor fixes for tags
+* downport
+* fix serilization of SXCI in background mode
+
+2018-01-03 v1.51.0
+------------------
++ support for lightweight tags
+! background mode push performance
+
+2017-12-19 v1.50.2
+------------------
+* downport
+* better package error handling for offline project popup
+
+2017-12-11 v1.50.1
+------------------
+* bugfix, identical git trees
+* bugfix, changed_by DOCV
+* bugfix, folder logic, shows error instead of dump
+
+2017-11-18 v1.50.0
+------------------
++ Fewer transport popups
+* Downport
+* bugfix, change remote
+* URL to global class
+
+2017-11-11 v1.49.0
+------------------
++ DDLX support
+* ENHS fix
+* Fix changing remote
+
+2017-10-29 v1.48.0
+------------------
+* WEBI fixes
+* IMAU fix
+! Better http errors errors
+* downport
+* Improve usability of repository popup
+! More global exception classes
++ proxy configuration user exit
+* Buffer settings
+
+2017-10-22 v1.47.0
+------------------
+* fix FUGR include diffs
++ filter by username on staging page
+
+2017-10-15 v1.46.0
+------------------
++ IAMU supported
++ SXCI supported
+* fix unambiguous error message
+
+2017-10-14 v1.45.0
+------------------
++ SRFC supported
++ USCA supported
+* fix dump when serializing local test classes
+* CLAS fix reordering of methods
+* Fix dump when installing abapGit dev version
+* Fix error with textpools
+
+2017-10-10 v1.44.0
+------------------
+* WAPA: fixes for so2_controller
+* PROG: fix textpool translation activation
+* Some refactoring
++ Select unnessesary objects when resetting local
+* PROG: force delete of used includes
+* new url for explore page
+* remove old persistency layer
+* downport
+* fix for foreign customer namespaces
+* definitions refactored to global class
+
+2017-10-06 v1.43.1
+------------------
+* Clear some DEVC fields
+* Downport
+
+2017-10-05 v1.43.0
+------------------
++ DEVC support
+* Textpool language when serializing
+* Jump to W3HT and W3MI
+* More moved to global classes
+* Downport
+
+2017-10-01 v1.42.0
+------------------
+* fix dump in "reset local objects"
+* Fix DDLS deletion/uninstall sequence
+* Skip DDLS auto generated objects
+! New dialog box for overwriting local objects
+
+2017-09-11 v1.41.2
+------------------
+* FUGR table maintenance, namespaces
+* SICF show error message when deleting root node
+* DDLS better error messages
+* ENHS allow transport popup
++ experimental, optional opt-in: CLAS deserialization performance
+
+2017-09-03 v1.41.1
+------------------
+* DDLS changed_by
+* Deletion of objects when performing "reset local"
+* Moved first class to global in the abapGit development version
+
+2017-08-23 v1.41.0
+------------------
++ SHMA supported
++ ENHO for function groups + web dynpro supported
+
+2017-08-11 v1.40.0
+------------------
++ JOBD supported
++ CMPT supported
+* downport fix
+
+2017-08-07 v1.39.0
+------------------
++ DIAL supported
+* fix XML dump
+
+2017-08-05 v1.38.0
+------------------
+! SICF serialization changed
+* TOBJ serialization added TDDAT, TVDIR, and TVIMF tables
+* TYPE fix overwriting/pull
+
+2017-08-03 v1.37.8
+------------------
+* Fix TABL changed_by
+* Downport to 702
+
+2017-07-28 v1.37.7
+------------------
+* Fix dump when parsing commit author, regex
+* Fix decoding of commit body, newlines
+* SAMC SAPC refactoring
+* DOMA diff fix, sorting
+
+2017-07-23 v1.37.6
+------------------
+* SMIM exists() performance
+* Background mode performance improvements
+* DOCT fix changed_by() dump
+
+2017-07-17 v1.37.5
+------------------
+* fix FUGR namespaces
+* few ASSERTs removed
+* decoding of non-7bit values from html gui
+
+2017-07-09 v1.37.4
+------------------
+* SSFO serialization fix
+* Adler32 optimization
+! progress indicator when encoding object pack
+* CLAS diff fix, texts sorted
+* SSST bug, only inactive exists
+! Global settings persistence changed to XML
+
+2017-06-29 v1.37.3
+------------------
+* fixed 702 compatibility
+* fixed dump when calling branch overview page
+
+2017-06-10 v1.37.2
+------------------
+* fixed unit tests
+* fixed dump when calling branch overview page
+
+2017-06-07 v1.37.1
+------------------
+* WDYN package popup
+* SHI3 diffs
+
+2017-06-03 v1.37.0
+------------------
++ FORM support
+* minor performance fixes
+! XML format changed, initial tables omitted
+
+2017-05-17 v1.36.1
+------------------
+* fixed problem regarding translated texts, PROG I18N_TPOOL
+
+2017-04-23 v1.36.0
+------------------
++ DCLS support
++ STYL support
+
+2017-04-23 v1.35.1
+------------------
+* DDLS jump
+* XLST jump
+* WAPA jump
+* WAPA extra XML fields
+! abapGit news announcements(only online)
+
+2017-04-20 v1.35.0
+------------------
++ SAMC support
++ SAPC support
+
+2017-04-15 v1.34.0
+------------------
++ WAPA support
++ display abapGit changelog in abapGit
+* bugfix nested namespace folders 
+
+2017-03-24 v1.33.3
+------------------
+* fix dump in transport to branch
+* fix dump in migration of .abapgit.xml to local state
+
+2017-03-23 v1.33.2
+------------------
+* fix Microsoft TFS zlib decompression error
+* downport of new requirements feature
+* fix for SMIM document class
+
+2017-03-21 v1.33.1
+------------------
+* reset TADIR-DELFLAG resetting or pulling object again
+
+2017-03-20 v1.33.0
+------------------
++ possibility to define software component requirements for repo
+
+2017-03-07 v1.32.0
+------------------
++ user interface changed for diff and staging pages
+* body length in commit page
+! refactored lcl_log
+
+2017-03-07 v1.31.1
+------------------
+! local .abapgit.xml state, note migration is triggered automatically when executing abapGit
+
+2017-02-25 v1.31.0
+------------------
++ SFPF support
++ Committer and author separated
+
+2017-02-22 v1.30.0
+------------------
++ SFPI support
+* fix for long branch names in popup
+* fix for generated maintenance function groups
+* changes to staging screen
+* should show less package popups during pull
+
+2017-02-17 v1.29.0
+------------------
++ FULL folder logic added
+
+2017-02-13 v1.28.0
+------------------
++ Staging page redesigned
++ Support for core data services
+
+2017-01-25 v1.27.0
+------------------
++ Two factor authentication with github.com
+
+2017-01-22 v1.26.0
+------------------
++ XML ignore initial fields
++ Newline added to end of all ABAP code
+
+2017-01-22 v1.25.2
+------------------
++ Possibility to set max number of objects in list
+
+2016-12-01 v1.24.0
+------------------
++ abap syntax highlighting
+
+2016-11-22
+------------------
++ supported object list @debugpage
++ New favorites bar. All repos are displayed in dropdown burger-button. A repo can be "starred" to appear in favbar.
+! W3xx serialization change (v2.0.0). Now data file is stored as a separate file instead of base64 field in XML.
+* Fixed bug in diff page: change counters values
+
+2016-11-12
+------------------
++ brand new style for file diff display - local and remote statuses are independent and based on local/remote hash and saved state
++ diffs can now be displayed for new local files
+* stage header diff (all changes) now display all diff including new local files
+! local state in DB is now calculated per file. This will require rebuilding of local checksums - the dislog will popup at the begining. The logic is: if local and remote file differs then: if remote branch is ahead then assume changes are remote, else (branches are equal) assume changes are local. This will lead to incorrect state for files changed on both sides (which should be a rare case though). If this is critical - it is better to sync repo with a previous version of abapGit first.
+
+before 2016-11-12
+------------------
+long history of abapGit development ;)
